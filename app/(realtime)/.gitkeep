@@ -1,0 +1,4 @@
+# Realtime Directory
+# This directory contains realtime subscription logic for Supabase.
+# Includes components and hooks for listening to database changes in real-time.
+

@@ -1,0 +1,33 @@
+{
+  "name": "solana-supabase-indexer",
+  "version": "1.0.0",
+  "description": "Standalone Solana indexer service that indexes blockchain data into Supabase",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node index.ts",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "solana",
+    "indexer",
+    "supabase",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.92.0",
+    "@supabase/supabase-js": "2.81.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

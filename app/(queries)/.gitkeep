@@ -1,0 +1,4 @@
+# Queries Directory
+# This directory contains data fetching logic and query hooks.
+# Typically includes React Query hooks, Supabase query functions, and data fetching utilities.
+

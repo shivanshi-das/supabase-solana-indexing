@@ -1,0 +1,54 @@
+{
+  "name": "supabase-solana-indexing",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start",
+    "indexer": "ts-node indexer/index.ts",
+    "indexer:build": "cd indexer && pnpm run build && pnpm start"
+  },
+  "displayName": "Supabase Solana Indexing",
+  "description": "Index Solana blockchain data into Supabase with real-time synchronization",
+  "usecase": "Indexing",
+  "keywords": [
+    "supabase",
+    "solana",
+    "indexing",
+    "realtime"
+  ],
+  "create-solana-dapp": {
+    "instructions": [
+      "Set up Supabase:",
+      "1. Create a project at https://supabase.com",
+      "2. Copy .env.example to .env.local and add your Supabase credentials",
+      "3. Run the database migrations in supabase/migrations/",
+      "4. Enable Realtime for the indexed_accounts table",
+      "Start the app: pnpm run dev",
+      "Start the indexer: pnpm run indexer"
+    ]
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.92.0",
+    "@supabase/supabase-js": "2.81.0",
+    "dotenv": "^16.4.5",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.0"
+  }
+}
+
