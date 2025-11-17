@@ -211,7 +211,7 @@ For real-time updates to work:
 ALTER PUBLICATION supabase_realtime ADD TABLE indexed_accounts;
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Indexer Configuration
 
